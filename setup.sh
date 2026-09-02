@@ -51,7 +51,7 @@ sudo mv runsc /usr/local/bin/
 echo "⚙️ [6/6] Registering gVisor Runtime in Docker Daemon..."
 cat <<'EOF' | sudo tee /etc/docker/daemon.json > /dev/null
 {
-  "default-runtime": "runsc",
+  "default-runtime": "runc",
   "runtimes": {
     "runsc": {
       "path": "/usr/local/bin/runsc",
