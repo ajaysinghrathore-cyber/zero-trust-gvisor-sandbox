@@ -168,7 +168,9 @@ WARNING: IPv4 forwarding is disabled
 1. **`Default Runtime: runsc`:** Confirms that Docker and gVisor are now 100% bonded natively. Docker has abandoned its vulnerable runtime and is fully sandboxed.
 2. **`IPv4 forwarding is disabled`:** Ensures full network containment—meaning zero outbound packet leaks from malicious containers into the Windows host environment!
 
-**PROJECT STATUS: 100% SECURE, ABHEDYA, AND COMPLETED** 🎖️
+**PROJECT STATUS: Validated container-isolation lab implementation** 🎖️
+
+The project demonstrates and documents Docker + gVisor runtime configuration, WSL2 troubleshooting, and local validation steps. It should be treated as a security lab/engineering project rather than a claim of absolute security.
 
 ---
 
