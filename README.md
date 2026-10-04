@@ -165,8 +165,8 @@ WARNING: IPv4 forwarding is disabled
 
 ### 🧠 Strategic Technical Insights:
 
-1. **`Default Runtime: runsc`:** Confirms that Docker and gVisor are now 100% bonded natively. Docker has abandoned its vulnerable runtime and is fully sandboxed.
-2. **`IPv4 forwarding is disabled`:** Ensures full network containment—meaning zero outbound packet leaks from malicious containers into the Windows host environment!
+1. **`Default Runtime: runsc`:** When this value is observed in `docker info`, it indicates that Docker is configured to use gVisor as its default runtime. The validation should be repeated on the target environment after setup.
+2. **`IPv4 forwarding is disabled`:** This is an observed Docker warning/configuration state; it should not be interpreted as proof of zero network leakage or complete host containment.
 
 **PROJECT STATUS: Validated container-isolation lab implementation** 🎖️
 
